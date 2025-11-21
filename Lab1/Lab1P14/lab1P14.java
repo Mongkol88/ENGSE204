@@ -108,8 +108,6 @@ public class lab1P14 {
 
                         if (Matrix[i][j] == '*') {
 
-                            System.out.println("Debug " + i + " " + j);
-
                             total_Bomb++;
 
                         }
