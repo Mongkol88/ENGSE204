@@ -124,10 +124,6 @@ public class lab1P14 {
             System.out.println("Result : " + total_Bomb);
         }
 
-
-
-        
-
         input.close();
 
     }
