@@ -6,23 +6,20 @@ public class lab1P14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in) ;
 
-        System.out.println("Enter Number of Row : ") ;
+        System.out.print("Enter Number of Row : ") ;
 
         int R = input.nextInt() ;
 
-        System.out.println("Enter Number of Colunm : ");
+        System.out.print("Enter Number of Colunm : ");
 
         int C = input.nextInt() ;
 
         char[][] Matrix = new char[R][C] ;
 
-        
 
         for (int i = 0; i < Matrix.length; i++) {
 
             for (int j = 0; j < Matrix[i].length ; j++) {
-
-                System.out.println("Enter Star or Bomb :");
 
                 char object = input.next().charAt(0) ;
 
@@ -31,11 +28,11 @@ public class lab1P14 {
             }
         }
 
-        System.out.println("Enter Row of Target : ");
+        System.out.print("Enter Row of Target : ");
 
         int R_target = input.nextInt() ;
 
-        System.out.println("Enter Colunm of Target : ");
+        System.out.print("Enter Colunm of Target : ");
 
         int C_target = input.nextInt() ;
 
@@ -62,9 +59,9 @@ public class lab1P14 {
 
             if ( R_target >= 1 && C_target >= 1 ) {
 
-                for (int i = R_target - 1; i < 3; i++) {
+                for (int i = R_target - 1; i < R; i++) {
 
-                    for (int j = C_target - 1; j < 3; j++) {
+                    for (int j = C_target - 1; j < C; j++) {
 
                         if (Matrix[i][j] == '*') {
 
@@ -75,9 +72,12 @@ public class lab1P14 {
                 }
             } else if ( R_target == 0 && C_target >= 1 ) {
 
-                for (int i = R_target; i < 3; i++) {
+                
 
-                    for (int j = C_target - 1; j < 3; j++) {
+
+                for (int i = R_target; i < R; i++) {
+
+                    for (int j = C_target - 1; j < C; j++) {
 
                         if (Matrix[i][j] == '*') {
 
@@ -88,9 +88,9 @@ public class lab1P14 {
                     }
                 }
             } else if ( C_target == 0 && R_target >= 1 ) {
-                for (int i = R_target - 1; i < 3; i++) {
+                for (int i = R_target - 1; i < R; i++) {
 
-                    for (int j = C_target; j < 3; j++) {
+                    for (int j = C_target; j < C; j++) {
 
                         if (Matrix[i][j] == '*') {
 
@@ -102,9 +102,9 @@ public class lab1P14 {
                 }
             } else if (C_target == 0 && R_target == 0) {
 
-                for (int i = R_target; i < 3; i++) {
+                for (int i = R_target; i < R; i++) {
 
-                    for (int j = C_target; j < 3; j++) {
+                    for (int j = C_target; j < C; j++) {
 
                         if (Matrix[i][j] == '*') {
 

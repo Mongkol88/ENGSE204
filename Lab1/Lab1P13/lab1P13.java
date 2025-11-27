@@ -31,6 +31,7 @@ public class lab1P13 {
                 Matrix[i][j] = x ;
 
                 if ( x == 1 ) {
+                    
                     totalServers_Online++;
                 }
             }
