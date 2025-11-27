@@ -2,6 +2,9 @@ package Lab2.Lab2P1;
 
 import java.util.Scanner;
 
+
+
+
 public class MainStudent {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in) ;
@@ -25,3 +28,4 @@ public class MainStudent {
         input.close();
     }
 }
+

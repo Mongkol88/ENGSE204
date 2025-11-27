@@ -13,8 +13,8 @@ public class StudentLab2 {
 
 
     public void displayInfo() {
-        System.out.println("ID : " + studentId);
-        System.out.println("Name : " + name);
+        System.out.println("ID : " + this.studentId) ;
+        System.out.println("Name : " + this.name) ;
     }
 }
 

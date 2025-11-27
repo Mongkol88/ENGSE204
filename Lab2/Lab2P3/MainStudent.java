@@ -11,11 +11,11 @@ public class MainStudent {
 
         for (int i = 0; i < n; i++) {
 
-            System.out.print("Enter Student ID : ");
+            System.out.print("Enter Student ID : ") ;
 
             String ID = input.next() ;
 
-            System.out.print("Enter Student Name : ");
+            System.out.print("Enter Student Name : ") ;
 
             String name = input.next() ;
 
@@ -25,8 +25,8 @@ public class MainStudent {
 
         }
 
-        System.out.println(StudentLab3.studentCount);
+        System.out.println(StudentLab3.studentCount) ;
 
-        input.close();
+        input.close() ;
     }
 }
