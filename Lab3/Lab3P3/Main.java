@@ -14,7 +14,7 @@ public class Main {
 
         user1.setPassword(newpassword) ;
         
-        System.out.println( user1.getPassword() ) ;
+        System.out.println(user1.getPassword() ) ;
 
         input.close() ;
     }
