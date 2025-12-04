@@ -13,15 +13,13 @@ public class BankAccount {
 
     public void deposit(double amount) { this.Balance += amount ; }
 
-    public void displaySummary() {
-        System.out.println("Balance : " + this.Balance);
-    }
+    public void displaySummary() { System.out.println("Balance : " + this.Balance) ; }
 
     public void withdraw(double amount) {
         if ( amount <= this.Balance ) { 
-            this.Balance -= amount ; System.out.println("Withdrawal Successful"); 
+            this.Balance -= amount ; System.out.println("Withdrawal Successful") ; 
         } else if ( amount >= this.Balance ) { 
-            System.out.println("Insufficient funds");
+            System.out.println("Insufficient funds") ;
         }
     }
 }

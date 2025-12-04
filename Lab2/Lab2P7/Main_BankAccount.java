@@ -17,14 +17,14 @@ public class Main_BankAccount {
         
         BankAccount BankAccount1 = new BankAccount(name, initialbalance) ;
 
-        BankAccount1.withdraw(withdraw1);
+        BankAccount1.withdraw(withdraw1) ;
 
-        BankAccount1.withdraw(withdraw2);
+        BankAccount1.withdraw(withdraw2) ;
 
-        BankAccount1.displaySummary();
+        BankAccount1.displaySummary() ;
 
 
-        input.close();
+        input.close() ;
     }
 }
 
