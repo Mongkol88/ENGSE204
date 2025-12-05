@@ -13,27 +13,18 @@ public class Main {
 
             if ( mode.equals("SET_URL") ) {
                 String newUrl = sc.next() ;
-
                 SystemConfig config = SystemConfig.getinstance() ;
-
                 config.setServerUrl(newUrl);
-
             } else if ( mode.equals("SET_MAX") ) {
                 int Max_count = sc.nextInt() ;
-
                 SystemConfig config = SystemConfig.getinstance() ;
-
                 config.SetMaxConnections(Max_count) ;
-                
             } else if ( mode.equals("SHOW") ) {
                 SystemConfig config = SystemConfig.getinstance() ;
-
                 System.out.println("URL: " + config.getServerUrl());
                 System.out.println("MAX: " + config.getMaxConnections());
             } 
         }
-
-
         sc.close();
     }
 }

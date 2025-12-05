@@ -7,7 +7,6 @@ public class Inventoryitem {
 
     public Inventoryitem(String productname , int Stock) {
         this.productName = productname ;
-
         if ( Stock >= 0 ) { this.Stock = Stock ; }
         else { this.Stock = 0 ; }
     }

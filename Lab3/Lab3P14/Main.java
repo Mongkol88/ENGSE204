@@ -16,7 +16,6 @@ public class Main {
                 double initialbalance = sc.nextDouble() ;
 
                 myAccount = new BankAccount(initialbalance) ;
-                
             } else if ( mode.equals("DEPOSIT") ) {
                 if ( myAccount != null ) {
                     double amount = sc.nextDouble() ;

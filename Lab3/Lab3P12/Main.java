@@ -7,21 +7,14 @@ public class Main {
         Scanner sc = new Scanner(System.in) ;
 
         String name = sc.nextLine() ;
-
         double monthlysalary = sc.nextDouble() ;
-
         double taxrate = sc.nextDouble() ;
-
         double raiseamount = sc.nextDouble() ;
 
         Employee employee1 = new Employee(name, monthlysalary) ;
-
         System.out.println("Tax (Before): " + employee1.calculateTax(taxrate)) ;
-
         employee1.giveRaise(raiseamount) ;
-
         System.out.println("Tax (After): " + employee1.calculateTax(taxrate)) ;
-
 
         sc.close();
     }

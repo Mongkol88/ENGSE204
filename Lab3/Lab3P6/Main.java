@@ -20,6 +20,6 @@ public class Main {
 
         System.out.println("Final Balance : " + bankaccount1.getBalance()) ;
 
-        input.close();
+        input.close() ;
     }
 }

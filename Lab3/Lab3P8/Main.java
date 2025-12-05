@@ -16,17 +16,12 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             String order = input.next() ;
-
             if ( order.equals("ADD") ) {
-
                 int newstock = input.nextInt() ;
                 inventory1.addStock(newstock) ; 
-
             } else if ( order.equals("SELL") ) {
-
                 int sell = input.nextInt() ;
                 inventory1.sellStock(sell) ;
-                
             }
         }
 
