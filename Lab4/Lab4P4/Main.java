@@ -10,13 +10,10 @@ class Location {
         this.latitude = latitude ;
         this.longitude = longitude ;
     }
-
     public Location(Location other) {
         this(other.latitude, other.longitude) ;
     }
-
     public void SetLatitude(double newlatitude) { this.latitude =  newlatitude ;}
-
     public void displayinfo() {
         System.out.println("Lat : " + this.latitude + ", " + "Lon : " + this.longitude);    
     }
@@ -35,7 +32,6 @@ public class Main {
         loc1.SetLatitude(newlat) ;
         loc1.displayinfo();
         loc2.displayinfo();
-
         sc.close();
     }
 }

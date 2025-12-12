@@ -1,6 +1,5 @@
 package Lab4.Lab4P10;
 
-import java.sql.Time;
 import java.util.Scanner ;
 
 class TimePeriod {

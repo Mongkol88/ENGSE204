@@ -34,7 +34,6 @@ class Color {
     public int getblue() {
         return this.blue ;
     }
-
     public void displayRGB() {
         System.out.println("R=" + this.red + ", G=" + this.green + ", B=" + this.blue);
     }

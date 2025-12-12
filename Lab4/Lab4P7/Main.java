@@ -2,7 +2,6 @@ package Lab4.Lab4P7;
 
 import java.util.Scanner;
 
-import java.lang.Object ;
 
 
 class Resource {

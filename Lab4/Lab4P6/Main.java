@@ -10,16 +10,13 @@ class Point {
         this.x = x ;
         this.y = y ;
     }
-
     public int getX() { return this.x ; }
     public int getY() { return this.y ; }
-
     public Point move(int dx, int dy) {
         int newX = this.x + dx ;
         int newY = this.y + dy ;
         return new Point(newX, newY) ;
     }
-
     public void displayinfo() {
         System.out.println("(" + this.x + ", " + this.y + ")");
     }

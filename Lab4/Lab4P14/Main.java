@@ -39,7 +39,6 @@ public class Main {
         originalScores[0] = newscore;
         sb1.displayScore();
         sb2.displayScore();
-
         sc.close();
     }
 }

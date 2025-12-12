@@ -8,7 +8,6 @@ class Schedule {
     public Schedule(int hour) { this.hour = hour;}
     public void setHour(int newhour) { this.hour = newhour; }
     public int getHour() { return this.hour; }
-
     public Schedule(Schedule other) { this.hour = other.hour; }
 }
 
@@ -20,12 +19,10 @@ class EmployeeSchedule {
         this.name = name;
         this.schedule = schedule;
     }
-
     public EmployeeSchedule(EmployeeSchedule other) {
         this.name = other.name; 
         this.schedule = new Schedule(other.schedule.getHour());
     }
-
     public void displaySchedule() {
         System.out.println(this.name + ": " + schedule.getHour() + ":00");
     }
@@ -37,15 +34,12 @@ public class Main {
         String name = sc.nextLine();
         int inithour = sc.nextInt();
         int newhour = sc.nextInt();
-
         Schedule sch1 = new Schedule(inithour);
         EmployeeSchedule emp1 = new EmployeeSchedule(name, sch1);
         EmployeeSchedule emp2 = new EmployeeSchedule(emp1);
         sch1.setHour(newhour);
         emp1.displaySchedule();
         emp2.displaySchedule();
-
-
         sc.close();
     }
 }
