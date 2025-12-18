@@ -51,7 +51,6 @@ public class Main {
             totalfee += vehicle.calculateFee();
         }
         System.out.println(totalfee);
-
         sc.close();
     }
 }

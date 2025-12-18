@@ -60,7 +60,6 @@ public class Main {
         for (Person person : persons) {
             System.out.println(person.getStatus());
         }
-
         sc.close();
     }
 }

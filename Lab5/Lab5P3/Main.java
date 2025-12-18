@@ -23,7 +23,6 @@ public class Main {
         Manager manager = new Manager();
         manager.salary = salary;
         System.out.println(manager.calculateBonus());
-
         sc.close();
     }
 }

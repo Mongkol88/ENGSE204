@@ -2,7 +2,6 @@ package Lab5.Lab5P11;
 
 import java.util.Scanner;
 
-
 class Document {
     protected String title;
     public Document(String title) {

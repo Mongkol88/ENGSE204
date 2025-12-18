@@ -5,8 +5,6 @@ import java.util.Scanner;
 class Animal {
     protected String name ;
     protected int age ;
-
-
     public void displayinfo() {
         System.out.println("Name: " + this.name);
         System.out.println("Age: " + this.age);
@@ -29,8 +27,6 @@ public class Main {
         dog.name = name;
         dog.makeSound();
         dog.displayinfo();
-
-
         sc.close();
     }
 }

@@ -20,15 +20,13 @@ class Car extends Vehicle {
     }
 }
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String color = sc.nextLine();
         int wheels = sc.nextInt();
-
         Car car = new Car(color, wheels);
         car.displayDeteils();
-
         sc.close();
     }
 }
