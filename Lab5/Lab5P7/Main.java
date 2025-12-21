@@ -1,65 +1,72 @@
 package Lab5.Lab5P7;
-
-import java.util.Scanner;
+import java.util.*;
 
 class Employee {
     protected String name;
     protected double baseSalary;
-    public Employee(String name, double basesalary) {
-        this.name = name;
-        this.baseSalary = basesalary;
+
+    public Employee(String n, double s) {
+        name = n;
+        baseSalary = s;
     }
+
     public double calculatePay() {
-        return this.baseSalary;
+        return baseSalary;
     }
 }
 
 class SalesEmployee extends Employee {
-    protected double commissionRate = 0.10;
-    public SalesEmployee(String name, double basesalary, double commissionRate) {
-        super(name, basesalary);
-        this.commissionRate = commissionRate;
+    protected double commRate;
+
+    public SalesEmployee(String name, double salary, double rate) {
+        super(name, salary);
+        this.commRate = rate;
     }
+
     @Override
     public double calculatePay() {
-        return baseSalary + (baseSalary * commissionRate);
+        return baseSalary + (baseSalary * commRate);
     }
 }
 
 class Manager extends Employee {
-    protected double fixedBonus;
-    public Manager(String name, double basesalary, double fixedBonus) {
-        super(name, basesalary);
-        this.fixedBonus = fixedBonus;
+    protected double bonus;
+
+    public Manager(String name, double sal, double b) {
+        super(name, sal);
+        this.bonus = b;
     }
     @Override
     public double calculatePay() {
-        return baseSalary + fixedBonus;
+        return baseSalary + bonus;
     }
 }
 
 class PayrollProcessor {
-    public static void process(Employee e) {
-        System.out.println(e.name + " Total Pay: " + e.calculatePay());
+    public static void process(Employee emp) {
+        System.out.println(emp.name + " Total Pay: " + emp.calculatePay());
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String SalesName = sc.nextLine();
-        double SalesSalary = sc.nextDouble();
-        double SalesRate = sc.nextDouble();
-        sc.nextLine();
-        String ManagerName = sc.nextLine();
-        double ManagerSalary = sc.nextDouble();
-        double ManagerBonus = sc.nextDouble();
+        Scanner input = new Scanner(System.in);
+        
+        String n1 = input.nextLine();
+        double s1 = input.nextDouble();
+        double r1 = input.nextDouble();
+        input.nextLine();
 
-        SalesEmployee sales = new SalesEmployee(SalesName, SalesSalary, SalesRate);
-        Manager manager = new Manager(ManagerName, ManagerSalary, ManagerBonus);
-        PayrollProcessor.process(sales);
-        PayrollProcessor.process(manager);
+        String n2 = input.nextLine();
+        double s2 = input.nextDouble();
+        double b2 = input.nextDouble();
 
-        sc.close();
+        SalesEmployee se = new SalesEmployee(n1, s1, r1);
+        Manager mg = new Manager(n2, s2, b2);
+
+        PayrollProcessor.process(se);
+        PayrollProcessor.process(mg);
+        
+        input.close();
     }
 }
